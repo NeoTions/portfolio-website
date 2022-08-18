@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local Weather</title>
+    </head>
+    <body>
+        
+        <section id="main">
+
+            <section>
+
+                <h1>This is my p5 sketch</h1>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr;">
+                    <h1>Local Weather Dashboard</h1>
+                    <p>Created by John St.Hilaire</p>
+                </div>
+                
+                <div>
+
+                </div>
+            </section>
+        
+            <div id="zip_search">
+                <form id="form"> 
+                    <input type="search" id="query" name="q" placeholder="Enter Zip Code">
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div>
+                <h3>Current Conditions</h3>
+                <p><span id="location"></span></p>
+            </div>
+
+            <div id="precipitaton_card" class="full_card">
+                <h2>Chance of Rain (%)</h2>
+                <canvas id="myChart" class="chart_canvas"> </canvas>     
+            </div>
+
+            <div id="humidity_uv">
+                <div id="humidity" class="small_card">
+                    <h2>Humidity (%)</h2>
+                </div>
+
+                <div id="uv_index" class="small_card">
+                    <h2>UV Index</h2>
+                </div>    
+            </div>
+
+            <div id="windspeed_aqi">
+                <div id="windspeed" class="small_card">
+                    <h2>Windspeed (MPH)</h2>
+                    <div>
+                        <canvas id="myWindspeed" class="chart_canvas"></canvas> 
+                        <div>
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aqi" class="small_card">
+                    <h2>Air Quality (AQI)</h2>
+                </div>
+            </div>
+
+            <div id="solar_graph" class="full_card">
+                <h2>Solar Graph</h2>
+            </div>
+
+        </section>
+
+    </body>
+
+    <script src="moment.js"></script>
+    <script src="scripts.js"></script> 
+
+</html>
