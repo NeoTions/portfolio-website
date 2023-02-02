@@ -1,0 +1,244 @@
+/* elements */
+
+body {
+    background-color: #070707;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+
+}
+
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+/* IDs */
+
+#main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#current_conditions {
+    margin: auto;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    max-width: 400px
+}
+
+#myChart {
+    width: 100%;
+    max-height: 200px; 
+    margin: 1rem;
+    margin-bottom: 0rem;
+}
+
+#zip_search {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#humidity_uv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+#windspeed_aqi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+#windspeed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+
+}
+
+#location {
+    color : rgb(200,200,200) ;
+}
+
+#myWindspeed {
+    width: 80%;
+}
+
+#logo_img {
+    max-width: 72px;
+}
+
+#footer {
+    background-color: #030405;
+    min-height: 200px;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#scrollToTopBtn {
+    cursor: pointer;
+
+    width: 72px;
+  }
+
+/* classes */
+
+.container {
+    position: relative;
+}
+
+.element {
+   position: absolute;
+
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.full_card {
+    background-color: #222222;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.small_card {
+    background-color: #222222;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.myChart {
+    background-color: white;
+    margin: auto;
+    min-height: 200px;
+    margin-bottom: 2rem;
+
+}
+
+.p5Canvas {
+    margin: auto;
+}
+
+
+
+
+
+.rotate {
+    animation: rotation 7s infinite linear;
+  }
+  
+
+
+/* anims */
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+
+@media (max-width:800px) {
+    
+
+    #current_conditions {
+        margin: auto;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        
+        max-width: 300px
+    }
+    
+
+    .small_card {
+        background-color: #222222;
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .full_card {
+        background-color: #222222;
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #humidity_uv {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #windspeed_aqi {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+
+    #scrollToTopBtn {
+        cursor: pointer;
+    
+        width: 48px;
+      }
+}
+
+
